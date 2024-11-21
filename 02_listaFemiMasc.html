@@ -19,9 +19,17 @@
         (genero === 'M') ? masculino.push(item) : feminino.push(item);
     }
 
+
     //SAÍDA
 
-    document.write(`Nomes femininos: <li>${feminino}</li><br>`);
-    document.write(`Nomes masculinos: <li>${masculino}</li>`);
+    document.write("Lista de nomes femininos:")
+
+    for (let item of feminino) {
+        document.write(`<li>${item}</li>`);
+    }
+    document.write("Lista de nomes masculinos:")
+    for (let item of masculino) {
+        document.write(`<li>${item}</li>`);
+    }
 
 </script>
